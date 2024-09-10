@@ -12,7 +12,14 @@ To deploy a web application capable of providing predictions for apartment price
 
 ### 🌟 Overview
 
-The model used to predict the price of apartments in Goiânia was trained based on the **main characteristics of the apartment** (number of bedrooms, number of bathrooms, total area, floor, etc.) as well as additional characteristics of the ad, such as the **main image** and the **full description** of the advertiser. The **mean percentage error** of the model on the data separated for testing was **13.64%**. 
+The model used to predict the price of apartments in Goiânia was trained based on the **main characteristics of the apartment** (number of bedrooms, number of bathrooms, total area, floor, etc.) as well as additional characteristics of the ad, such as the **main image** and the **full description** of the advertiser. The **mean percentage error** of the model on the data separated for testing was **13.64%**.
+
+**Relevant details**
+
+- Image features were extracted using ResNet-18 trained on the ImageNet-1k dataset;
+- Features from the full description were extracted using TfIdfVectorizer;
+- Missing values ​​were processed natively by HistGradientBoostingRegressor;
+- Hyperparameter tuning was done using Bayes optimization;
 
 ### 📄 Additional information
 
