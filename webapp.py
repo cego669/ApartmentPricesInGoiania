@@ -304,7 +304,6 @@ For a more detailed exploration, please consider visiting my [github repository]
                        "price":"Price (R$)"}
     
     # get color scale from values of a column
-    @st.cache_data
     def get_color_scale(values):
         max_value = values.max()
         min_value = values.min()
@@ -312,12 +311,10 @@ For a more detailed exploration, please consider visiting my [github repository]
                 ((values.quantile(.75)-min_value)/(max_value-min_value), "red")]
     
     # function to normalize values
-    @st.cache_data
     def normalize_values(values):
         return (values - np.quantile(values, .05)) / (np.quantile(values, .95) - np.quantile(values, .05))
 
     # function to convert a normalized value to rgb
-    @st.cache_data
     def value_to_rgb(value_normalized):
         # blue -> [0, 0, 255], red -> [255, 0, 0]
         r = int(255 * value_normalized)/255     # increases red value
