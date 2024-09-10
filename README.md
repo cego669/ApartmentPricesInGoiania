@@ -4,7 +4,7 @@
 
 Visit and interact with the web app here!
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/cego669/apartment-prices-goi-nia/main/webapp.py)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://apartmentpricesingoiania.streamlit.app/)
 
 ### 🎯 Objective of this project
 
