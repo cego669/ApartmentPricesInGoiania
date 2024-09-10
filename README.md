@@ -1,12 +1,22 @@
 # ApartmentPricesInGoiania
 
+## 🔗 Web app
+
+Visit and interact with the web app here!
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/cego669/apartment-prices-goi-nia/main/webapp.py)
+
 ## 🎯 Objective of this project
 
 To deploy a web application capable of providing predictions for apartment prices in **Goiânia**. All you need to do is **fill in the input data form and click "Predict!"**!
 
+## 🌟 Overview
+
+The model used to predict the price of apartments in Goiânia was trained based on the **main characteristics of the apartment** (number of bedrooms, number of bathrooms, total area, floor, etc.) as well as additional characteristics of the ad, such as the **main image** and the **full description** of the advertiser. The **mean percentage error** of the model on the data separated for testing was **13.64%**. 
+
 ## 📄 Additional information
 
-The static prediction model was trained using data collected from the internet (August, 2024), for **educational purposes only**. You should **NOT** use the model's predictions to make actual decisions or for commercial purposes. If you would like to better understand the steps that were taken to collect, clean and model the data, please consider visiting my [github repository](https://github.com/cego669/ApartmentPricesInGoiania).
+The static prediction model was trained using data collected from the internet (August, 2024), for **educational purposes only**. You should **NOT** use the model's predictions to make actual decisions or for commercial purposes. If you would like to better understand the steps that were taken to collect, clean and model the data, please consider studying the folders `1_data_extraction`, `2_data_cleaning`, `3_data_exploring`, `4_img_feature_extraction` and `5_modeling`.
 
 ## 📨 Contact me
 
